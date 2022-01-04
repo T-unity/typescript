@@ -1,14 +1,14 @@
 let someMan = {
-  name: 'ももたろー',
+  name: 'きんたろー',
   age: 48,
 };
 
-function greet() {
-  console.log(`hello, ${someMan.name}`);
+function greet(man) {
+  console.log(`hello, ${man.name}`);
 }
-function getBirthYear() {
-  return new Date().getFullYear() - someMan.age;
+function getBirthYear(man) {
+  return new Date().getFullYear() - man.age;
 }
 
-greet();
-console.log(getBirthYear());
+greet(someMan);
+console.log(getBirthYear(someMan));
