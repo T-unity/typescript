@@ -1,5 +1,14 @@
-const player = { name: 'Jon', comment: 'Im strong', rate: 782}
-for(let prop in player) {
-  if(!player.hasOwnProperty(prop)) continue;
-  console.log(prop + ': ' + player[prop]);
+let someMan = {
+  name: 'ももたろー',
+  age: 48,
+};
+
+function greet() {
+  console.log(`hello, ${someMan.name}`);
 }
+function getBirthYear() {
+  return new Date().getFullYear() - someMan.age;
+}
+
+greet();
+console.log(getBirthYear());
