@@ -1,11 +1,10 @@
-const obj = {}
-console.log(obj)
-console.log('-----')
+class Car {
+  constructor() {
 
-obj.color = 'red';
-console.log(obj)
-console.log('-----')
+  }
+}
 
-obj['name']= 'fire';
-console.log(obj)
-console.log('-----')
+console.log(Car);
+
+const car1 = new Car();
+console.log(car1);
