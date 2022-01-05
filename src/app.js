@@ -1,14 +1,18 @@
-let someMan = {
-  name: 'きんたろー',
-  age: 48,
-};
+const items = [
+  {
+    name: 'iPhone',
+    price: 54800
+  },
+  {
+    name: 'Android',
+    price: 49800
+  }
+]
 
-function greet(man) {
-  console.log(`hello, ${man.name}`);
-}
-function getBirthYear(man) {
-  return new Date().getFullYear() - man.age;
-}
+console.log(items)
 
-greet(someMan);
-console.log(getBirthYear(someMan));
+const names = items.map(x => x.name)
+console.log(names)
+
+const prices = items.map(x => x.price)
+console.log(prices)
