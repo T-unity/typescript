@@ -1,10 +1,9 @@
 class Car {
-  constructor() {
-
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
   }
 }
 
-console.log(Car);
-
-const car1 = new Car();
-console.log(car1);
+const prius = new Car('TOYOTA', 'prius');
+console.log(prius);
