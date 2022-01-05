@@ -1,18 +1,11 @@
-const items = [
-  {
-    name: 'iPhone',
-    price: 54800
-  },
-  {
-    name: 'Android',
-    price: 49800
-  }
-]
+const obj = {}
+console.log(obj)
+console.log('-----')
 
-console.log(items)
+obj.color = 'red';
+console.log(obj)
+console.log('-----')
 
-const names = items.map(x => x.name)
-console.log(names)
-
-const prices = items.map(x => x.price)
-console.log(prices)
+obj['name']= 'fire';
+console.log(obj)
+console.log('-----')
