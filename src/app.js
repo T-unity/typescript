@@ -4,6 +4,9 @@ class Score {
     const foods = new Foods();
     return foods.activeElementsScore.reduce((total, score) => total + score, 0)
   }
+  render() {
+    document.querySelector('.score__number').textContent = String(this.totalScore);
+  }
 }
 
 class Food {
@@ -18,6 +21,8 @@ class Food {
     // this.element.classList.toggle('food--active');
     this.classList.toggle('food--active');
     // console.log(this.querySelector('.food__score').innerHTML);
+    const score = new Score();
+    score.render();
   }
 }
 
